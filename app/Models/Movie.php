@@ -21,4 +21,9 @@ class Movie extends Model
         'poster_url',
         'genre',
     ];
+
+    public function users()
+    {
+        return $this->belongsToMany(User::class);
+    }
 }
